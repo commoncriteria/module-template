@@ -153,7 +153,7 @@
             WLAN, such as sending unencrypted sensitive data. The WIDS will be capable of collecting
             and analyzing WLAN data to detect unauthorized disclosure of information. </description>
            <consistency-rationale> This threat is consistent with <_/> </consistency-rationale>
-          <objective-refer ref="O.SYSTEM_MONITORING">
+          <objective-refer ref="O.SYSTEM_MONITORING (From GPOS PP)">
             <rationale>The threat T.Unauthorized_Disclosure_of_Information is countered by
               O.SYSTEM_MONITORING as this provides for visibility into the network which enables
               detection of network violations.</rationale>
