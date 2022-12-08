@@ -1,0 +1,1 @@
+/home/runner/work/module-template/module-template/input/module-template.xml:156:69: error: value of attribute "ref" is invalid; must be a string matching the regular expression "O(E?)\.[_A-Z]+"
