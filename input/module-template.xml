@@ -4,18 +4,11 @@
 <?xml-model href="https://github.com/commoncriteria/transforms/raw/master/schemas/CCModule.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 
 
-<Module boilerplate="yes" target-product="Widget" name="Widgets" 
-	xmlns="https://niap-ccevs.org/cc/v1"
-	xmlns:sec="https://niap-ccevs.org/cc/v1/section"
-	xmlns:h="http://www.w3.org/1999/xhtml">
-  <PPReference>
-    <ReferenceTable>
-      <PPVersion>1.0</PPVersion>
-      <PPAuthor>National Information Assurance Partnership</PPAuthor>
-      <PPPubDate>2020-01-16</PPPubDate>
-      <Keywords>widgets</Keywords>
-    </ReferenceTable>
-  </PPReference>
+<Module
+    xmlns="https://niap-ccevs.org/cc/v1"
+    xmlns:sec="https://niap-ccevs.org/cc/v1/section"
+    xmlns:h="http://www.w3.org/1999/xhtml">
+  <product_class>Widget</product_class>
   <RevisionHistory>
     <entry>
       <version>1.0</version>
@@ -153,7 +146,7 @@
             WLAN, such as sending unencrypted sensitive data. The WIDS will be capable of collecting
             and analyzing WLAN data to detect unauthorized disclosure of information. </description>
            <consistency-rationale> This threat is consistent with <_/> </consistency-rationale>
-          <objective-refer ref="O.SYSTEM_MONITORING (From GPOS PP)">
+          <objective-refer ref="O.SYSTEM_MONITORING">
             <rationale>The threat T.Unauthorized_Disclosure_of_Information is countered by
               O.SYSTEM_MONITORING as this provides for visibility into the network which enables
               detection of network violations.</rationale>
@@ -387,7 +380,11 @@
 		<con-obj/>
 		<con-op-en/>
 	</base-pp>
-	<base-pp id="b-nd" version="2.1" name="Network Device" target-product="Network Device" short="ND">
+	<base-pp id="b-nd">
+	  <version>2.1</version>
+	  <product_class>Network Device</product_class>
+	  <short>ND</short>
+	  <cPP/>
 	  <url>https://www.niap-ccevs.org/Profile/Info.cfm?PPID=440&amp;id=440</url>
 
       <con-toe> 
